@@ -17,6 +17,7 @@
             include 'navbar.php'; echo '<br>';
             include 'marcacao.php';
             ?>
+            <a href="apagarhorarios.php">LIMPAR HORARIOS<a>
         </div>
     </body>
 </html>

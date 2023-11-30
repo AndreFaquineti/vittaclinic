@@ -46,6 +46,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['horario'])) {
             }
         ?>
     </div>
-    <a href="apagarhorarios.php">LIMPAR HORARIOS<a>
 </body>
 </html>
