@@ -1,0 +1,3 @@
+YY/MM/DD
+23/11/30 - Projeto clonado e config atualizado
+23/12/02 - Estrutura de darkmode, stylesdark.css e changelog criados.
