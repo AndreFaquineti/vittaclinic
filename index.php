@@ -9,16 +9,22 @@
             charset();
             bootview();
             hearticon();
+            if (@$_SESSION['tema'] == 0) {
+                stylesheetl();
+            } else {
+                stylesheetd();
+            }
         ?>
     </head>
     <body>
-        <div>
-            <?php
-            include 'navbar.php'; echo '<br>';
-            include 'conteudo1.php'; echo '<br>';
-            include 'rodape1.php'; echo '<br>';
-            include 'config.php';
-            ?>
-        </div>
+        <main>
+            <div class="bgmain">
+                <?php
+                include 'navbar.php'; echo '<br>';
+                include 'conteudo1.php'; echo '<br>';
+                include 'rodape1.php'; echo '<br>';
+                ?>
+            </div>
+        </main>
     </body>
 </html>

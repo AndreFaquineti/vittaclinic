@@ -4,9 +4,17 @@
     }
 
     function charset() {
-        echo '<meta charset="UTF-8">
-        <link rel="stylesheet" href="styles.css">';
+        echo '<meta charset="UTF-8">';
     }
+
+    function stylesheetl() {
+        echo '<link rel="stylesheet" href="styles.css">';
+    }
+
+    function stylesheetd() {
+        echo '<link rel="stylesheet" href="stylesdark.css">';
+    }
+
 
     function titulo() {
         echo '<title>VittaClinic</title>';

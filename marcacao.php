@@ -44,7 +44,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['horario'])) {
             } else {
                 echo 'Todos os horários estão livres!';
             }
+            echo '<br>';
         ?>
+        <a href="apagarhorarios.php">LIMPAR HORARIOS<a>
     </div>
 </body>
 </html>
