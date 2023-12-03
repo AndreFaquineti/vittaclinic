@@ -53,17 +53,23 @@
     text-decoration: none;
     color: #0066ff;
 }
-/*FUNDOS*/
-main {
-    background-color: #FFFFFF;
+
+.linklimporosa {
+    text-decoration: none;
+    color: #ff4f84;
 }
 
-.bgazuldestaque {
-    background-color: #3366CC;
+/*FUNDOS*/
+.bgmain {
+    background-color: #FFFFFF;
 }
 
 .bgrosa {
     background-color: #ff4f84;
+}
+
+.bgazuldestaque {
+    background-color: #3366CC;
 }
 
 .bggradientazul {

@@ -1,3 +1,4 @@
 YY/MM/DD
 23/11/30 - Projeto clonado e config atualizado
 23/12/02 - Estrutura de darkmode, stylesdark.css e changelog criados.
+23/12/03 - Darkmode melhorado, navbar atualizada, não resolvido o problema de margem do rodapé.

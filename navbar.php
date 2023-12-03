@@ -4,39 +4,29 @@
 
     </head>
     <body>
-            <div class="row bgrosa">
+            <div class="row bgmain" style="margin-left: 1%; margin-right: 1%;">
                 <div class="col-4">
                     <div class="row">
-                        <div class="col-6">
-                            <div class="d-flex justify-content-center">
-                                <div class="texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-1rem">
-                                    <?php
-                                        if (isset($_SESSION['email'])) {
-                                            echo "USUARIO: " . $_SESSION['email']['email'];
-                                        }
-                                        else {
-                                            echo '<div class="texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-2rem">
-                                            <a href="paginalogin.php" class="linklimpobranco">Entre / faça seu cadastro</a> </div>';
-                                        }
-                                    ?>
-                                </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="texto1azulescuro fonte-recoleta-bold-alt fonte-bold-700 fonte-2rem">
+                                <?php
+                                    if (isset($_SESSION['email'])) {
+                                        echo "USUARIO: " . $_SESSION['email']['email'];
+                                    }
+                                    else {
+                                        echo '<div class="texto1azulescuro fonte-recoleta-bold-alt fonte-bold-700 fonte-2rem">
+                                        <a href="paginalogin.php" class="texto1azulescuro">Entre / faça seu cadastro</a> </div>' ;
+                                    }
+                                ?>
                             </div>
-                        </div>
-                        <div class="col-6">
-                            <?php
-                                if (isset($_SESSION['email'])) {
-                                    echo '<div class="d-flex justify-content-center">
-                                    <a href="sair.php" class="texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-2rem">Sair</a>
-                                    </div>';
-                                }
-                            ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="d-flex justify-content-center">
-                        <a href="index.php" class="linklimpobranco">
-                            <h1 class="texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-3rem">Vitta.Clinic</h1>
+                        <a href="index.php" class="linklimpobranco ">
+                            <br>
+                            <h1 class="texto1rosa fonte-recoleta-bold-alt fonte-bold-700 fonte-3rem">Vitta.Clinic</h1>
                         </a>
                     </div>
                 </div>
@@ -68,7 +58,11 @@
                             </form> <br>
                         </div>
                         <div class="col-6">
-                            <a href="sair.php" class="texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-2rem">Sair</a>
+                            <?php
+                                if (!isset($_SESSION['email'])) {
+                                    echo '<br><a href="sair.php" class="texto1azulescuro fonte-recoleta-bold-alt fonte-bold-700 fonte-2rem">Sair</a>';
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>

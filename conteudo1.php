@@ -6,7 +6,7 @@
         ?>
     </head>
     <body>
-        <div style="margin-left: 1%; margin-top: 1%; margin-bottom: 1%; margin-right: 1%;">
+        <div style="margin-left: 1%; margin-top: 1%; margin-bottom: 0%; margin-right: 1%;">
             <div class="row">
                 <div class="col-6">
                     <div class="fonte-recoleta-bold-alt fonte-bold-700 fonte-3rem texto1azulescuro" style="margin-right: 30px;">

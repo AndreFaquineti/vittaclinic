@@ -4,7 +4,7 @@
 }
 
 .texto1azulescuro {
-    color: #000066;
+    color: #E4E6EB;
 }
 
 .texto1branco {
@@ -53,17 +53,23 @@
     text-decoration: none;
     color: #0066ff;
 }
+
+.linklimporosa {
+    text-decoration: none;
+    color: #ff4f84;
+}
+
 /*FUNDOS*/
 .bgmain {
     background-color: #18191A;
 }
 
-.bgazuldestaque {
-    background-color: #3366CC;
-}
-
 .bgrosa {
     background-color: #ff4f84;
+}
+
+.bgazuldestaque {
+    background-color: #3366CC;
 }
 
 .bggradientazul {
