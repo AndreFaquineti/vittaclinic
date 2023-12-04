@@ -5,16 +5,18 @@
             require_once ('lib.php');
         ?>
     </head>
-    <body>
-        <div class="bgrosa" style="margin: 0; display: flex; flex-direction: column; min-height: 100%;">
-            <div class="row texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-3rem" style="margin-left: 1%; margin-right: 1%; margin-bottom: 1%;">
+    <body style="height: 100%;">
+        <div class="bgrosa" style="height: 100%;">
+            <div class="row texto1branco fonte-recoleta-bold-alt fonte-bold-700 fonte-3rem">
                 <div class="col-3">
                     <h1>Vitta.Clinic</h1>
                     <a href="apresentacao\funcionalidades.php" class="texto1branco fonte-1rem"><h2>Funcionalidades<h2></a>
+                    <br>
                 </div>
                 <div class="col-3">
                     <h1>Nossa Equipe</h1>
                     <a href="apresentacao\participantes.php" class="texto1branco fonte-1rem"><h2>Participantes<h2></a>
+                    <br>
                 </div>
                 <div class="col-3">
                     <h1>Fale Conosco</h1>
@@ -27,9 +29,11 @@
                     <div class="texto1branco fonte-1rem">
                         <?php instagramicon();?> Vittaclinic
                     </div>
+                    <br>
                 </div>
                 <div class="col-3">
                     <h1>Ajuda</h1>
+                    <br>
                 </div>
             </div>
         </div>

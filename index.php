@@ -16,13 +16,13 @@
             }
         ?>
     </head>
-    <body>
-        <main>
-            <div class="bgmain">
+    <body style="height: 100%; width: 100%;">
+        <main style="height: 100%;">
+            <div class="bgmain" style="height: 100%;">
                 <?php
                 include 'navbar.php'; echo '<br>';
                 include 'conteudo1.php'; echo '<br>';
-                include 'rodape1.php'; echo '<br>';
+                include 'rodape1.php';
                 ?>
             </div>
         </main>
