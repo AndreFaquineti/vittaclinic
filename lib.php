@@ -8,11 +8,11 @@
     }
 
     function stylesheetl() {
-        echo '<link rel="stylesheet" href="styles.css">';
+        echo '<link rel="stylesheet" href="estilos/styles.css">';
     }
 
     function stylesheetd() {
-        echo '<link rel="stylesheet" href="stylesdark.css">';
+        echo '<link rel="stylesheet" href="estilos/stylesdark.css">';
     }
 
 
