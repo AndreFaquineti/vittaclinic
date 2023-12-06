@@ -3,4 +3,5 @@ YY/MM/DD
 23/12/02 - Estrutura de darkmode, stylesdark.css e changelog criados.
 23/12/03 - Darkmode melhorado, navbar atualizada, não resolvido o problema de margem do rodapé.
 23/12/04 - Problema de margem corrigido; Base sql pronta para registro de médicos, pacientes e marcação de consultas.
-23/12/05 - Estrutura de arquivos alterada. Branch Refresh.
+23/12/05 - Estrutura de arquivos alterada; Branch Refresh.
+23/12/06 - Melhorias no projeto; Index, Navbar, estilos light e dark, imagens, lib.php e sair.php Criados.
