@@ -21,21 +21,19 @@
                         <input type="submit" name="trocarTema" value="Trocar Tema">
                     </form>
                     <?php
-                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['trocarTema'])) {
-                            trocarTema();
-                            header("Location: {$_SERVER['PHP_SELF']}"); // Redireciona para a mesma página
-                            exit;
+                        if (!isset($_SESSION['tema'])) {
+                            $_SESSION['tema'] = 0;
                         }
-                         function trocarTema() {
-                            if (!isset($_SESSION['tema'])) {
-                                $_SESSION['tema'] = 0;
-                            }
-                        
+                        function trocarTema() {
                             if ($_SESSION['tema'] == 0) {
                                 $_SESSION['tema'] = 1;
                             } else {
                                 $_SESSION['tema'] = 0;
                             }
+                        }
+                        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['trocarTema'])) {
+                            trocarTema();
+                            header("Location: {$_SERVER['PHP_SELF']}");
                         }
                     ?>
                 </div>

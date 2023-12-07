@@ -8,16 +8,16 @@
             charset();
             bootview();
             hearticon();
-            if ($_SESSION['tema'] != 0) {
-                if ($_SESSION['tema'] != 1) {
-                    $_SESSION['tema'] = 0;
-                }
+            if (!isset($_SESSION['tema'])) {
+                $_SESSION['tema'] = 0;
             }
             if ($_SESSION['tema'] == 0) {
-                stylesheetl();
+                    stylesheetl();
             } else {
-                stylesheetd();
-            }
+                if ($_SESSION['tema'] == 1) {
+                    stylesheetd();
+                }
+                }
         ?>
     </head>
     <body>
@@ -25,7 +25,6 @@
             <?php
                 include 'conteudo/navbar.php';
             ?>
-            oloi
         </main>
     </body>
 </html>

@@ -8,24 +8,26 @@
             charset();
             bootview();
             hearticon();
-            if ($_SESSION['tema'] != 0) {
-                if ($_SESSION['tema'] != 1) {
-                    $_SESSION['tema'] = 0;
-                }
+            if (!isset($_SESSION['tema'])) {
+                $_SESSION['tema'] = 0;
             }
             if ($_SESSION['tema'] == 0) {
-                stylesheetl();
+                    stylesheetl();
             } else {
-                stylesheetd();
-            }
+                if ($_SESSION['tema'] == 1) {
+                    stylesheetd();
+                }
+                }
         ?>
     </head>
     <body>
         <main class="bgmain" style="height: 100%;">
             <?php
                 include 'conteudo/navbar.php';
+                include 'sistema/sis_login.php';
+                include 'conteudo/form_login.php';
             ?>
-            oloi
+            <a href="registro.php">Registro</a>
         </main>
     </body>
 </html>
