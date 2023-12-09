@@ -1,25 +1,49 @@
-<!--
-Usuario:
-Email, Senha
-Sistema:
-Se Email presente em tabela médicos {
-    Se Senha presente em tabela médicos {
-        Acesso Concedido, Email salva em Session , Usuario vai para 'MinhaPagina.php';
-    } Senão {
-        Escreve: "verifique sua senha."
-    }
-} Senão {
-    Se email presente em tabela pacientes {
-        Se Senha presente em tabela pacientes {
-            Acesso Concedido, Email salva em Session, Usuario vai para 'MinhaPagina.php';
-        } Senão {
-        Escreve: "verifique sua senha."
-    }
-    } Senão {
-        Escreve: "verifique seu email."
-    }
-}
--->
 <?php
+    session_start();
+    include 'config.php';
+    if(isset($_POST['email']) && isset($_POST['senha'])) {
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
+        $consulta = $conn->prepare("SELECT * FROM medicos WHERE email = :email");
+        $consulta->bindParam(':email', $email);
+        $consulta->execute();
+        $medico = $consulta->fetch();
+        if ($medico) {
+            if (password_verify($senha, $senha_hash)) {
+                $_SESSION['email'] = $email;
+                $_SESSION['usuario'] = 'medico';
+                echo 'Login bem sucedido';
+                header('location: /vittaclinic/minhapagina.php');
+                exit;
+            } else {
+                echo 'Verifique sua Senha';
+                header("Refresh: 3; Url=/vittaclinic/login.php");
+                exit;
+            }
+        } else {
+            $consulta = $conn->prepare("SELECT * FROM pacientes WHERE email = :email");
+            $consulta->bindParam(':email', $email);
+            $consulta->execute();
+            $paciente = $consulta->fetch();
+            if ($paciente) {
+                if (password_verify($senha, $senha_hash)) {
+                    $_SESSION['email'] = $email;
+                    $_SESSION['usuario'] = 'paciente';
+                    echo 'Login bem sucedido';
+                    header('location: /vittaclinic/minhapagina.php');
+                    exit;
+                } else {
+                    echo 'Verifique sua Senha';
+                    header("Refresh: 3; Url=/vittaclinic/login.php");
+                    exit;
+                }
+            } else {
+                echo 'Verifique seu Email';
+                header("Refresh: 3; Url=/vittaclinic/login.php");
+                exit;
+            } 
+        }
+    }
 ?>

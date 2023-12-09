@@ -8,7 +8,8 @@
             <div class="col-4" style="text-align: center; margin: 0 auto;">
                 <?php
                     if (isset($_SESSION['email'])) {
-                        echo 'Usuario: ' . $_SESSION['email'];
+                        echo 'Usuario: ' . $_SESSION['email']; echo '<br>';
+                        echo '<a href="/vittaclinic/minhapagina.php">Minha página</a>';
                     } else {
                         echo '<a href="/vittaclinic/login.php">Entre/Faça Seu Cadastro</a>';
                     }

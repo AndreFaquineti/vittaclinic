@@ -16,7 +16,7 @@
                         <label for="senha">Senha:</label>
                         <input type="password" id="senha" name="senha" required><br><br>
                         
-                        <input type="submit" value="Registro">
+                        <input type="submit" value="Registro"><a href="/vittaclinic/login.php">Entrar</a>
                     </form>
                 </card>
             </div>

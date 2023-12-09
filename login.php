@@ -24,10 +24,8 @@
         <main class="bgmain" style="height: 100%;">
             <?php
                 include 'conteudo/navbar.php'; echo '<br>';
-                include 'sistema/sis_login.php'; echo '<br>';
                 include 'conteudo/form_login.php';
             ?>
-            <a href="registro.php">Registro</a>
         </main>
     </body>
 </html>

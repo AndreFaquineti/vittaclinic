@@ -7,3 +7,4 @@ YY/MM/DD
 23/12/06 - Melhorias no projeto; Index, Navbar, estilos light e dark, imagens, lib.php e sair.php Criados.
 23/12/07 - Darkmode funciona sem conflitos em $_SESSION; Formularios de login e registro criados; Pseudocódigo de login e registro criado;
 23/12/08 - Correções de navbar e layout; Sistema de registro e session funcionais; Pagina minha pagina criada.
+23/12/09 - Sistema de login funcional; Updates na Navbar e na Minha Pagina.

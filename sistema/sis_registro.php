@@ -11,9 +11,7 @@
         $consulta->execute();
         $medico = $consulta->fetch();
         if ($medico) {
-            echo 'Esse email já está cadastrado!';
-            header("Refresh: 3; Url=/vittaclinic/registro.php");
-            exit;
+            
         } else {
             $consulta = $conn->prepare("SELECT * FROM pacientes WHERE email = :email");
             $consulta->bindParam(':email', $email);
