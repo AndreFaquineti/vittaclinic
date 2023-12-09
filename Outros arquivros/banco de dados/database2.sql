@@ -3,13 +3,13 @@ mysql -u root -p
 CREATE DATABASE vittaclinic;
 use vittaclinic;
 
-CREATE TABLE paciente (
+CREATE TABLE pacientes (
     email varchar (100) NOT NULL,
     senha varchar (100) NOT NULL,
     PRIMARY KEY (email)
 );
 
-CREATE TABLE medico (
+CREATE TABLE medicos (
     email varchar (100) NOT NULL,
     senha varchar (100) NOT NULL,
     PRIMARY KEY (email)
@@ -25,8 +25,8 @@ CREATE TABLE IF NOT EXISTS horarios_medicoteste (
     FOREIGN KEY (email_medico_fk) REFERENCES medico(email)
 );
 
-INSERT INTO paciente VALUES("paciente@teste.com","123");
-INSERT INTO medico VALUES("medico@teste.com","123");
+INSERT INTO pacientes VALUES("paciente@teste.com","123");
+INSERT INTO medicos VALUES("medico@teste.com","123");
 
 DELIMITER //
     SET @contador := 0;
@@ -47,6 +47,6 @@ DELIMITER //
     END WHILE//
 DELIMITER ;
 
-SELECT * FROM medico;
-SELECT * FROM paciente;
+SELECT * FROM medicos;
+SELECT * FROM pacientes;
 SELECT * FROM horario_medicoteste;

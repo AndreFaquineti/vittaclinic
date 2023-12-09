@@ -23,9 +23,9 @@
     <body>
         <main class="bgmain" style="height: 100%;">
             <?php
-                include 'conteudo/navbar.php'; echo '<br>';
-                include 'conteudo/form_registro.php';
+                include 'conteudo/navbar.php';
             ?>
+            Futura Minha Pagina.
         </main>
     </body>
 </html>
