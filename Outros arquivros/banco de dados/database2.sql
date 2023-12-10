@@ -15,6 +15,12 @@ CREATE TABLE medicos (
     PRIMARY KEY (email)
 );
 
+CREATE TABLE adms (
+    email varchar (100) NOT NULL,
+    senha varchar (100) NOT NULL,
+    PRIMARY KEY (email)
+);
+
 CREATE TABLE IF NOT EXISTS horarios_medicoteste (
     horario DATETIME NOT NULL,
     disponivel BOOLEAN NOT NULL,
@@ -27,6 +33,7 @@ CREATE TABLE IF NOT EXISTS horarios_medicoteste (
 
 INSERT INTO pacientes VALUES("paciente@teste.com","123");
 INSERT INTO medicos VALUES("medico@teste.com","123");
+INSERT INTO adms VALUES("admin@1.com","admin");
 
 DELIMITER //
     SET @contador := 0;
@@ -49,4 +56,5 @@ DELIMITER ;
 
 SELECT * FROM medicos;
 SELECT * FROM pacientes;
+SELECT * FROM adms;
 SELECT * FROM horario_medicoteste;

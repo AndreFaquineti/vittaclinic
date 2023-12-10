@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include 'config.php';
     if(isset($_POST['email']) && isset($_POST['senha'])) {
         $email = $_POST['email'];
@@ -12,7 +11,7 @@
         $adms = $consulta->fetch();
         if ($adms) {
             echo 'Esse email já está cadastrado!';
-            header("Refresh: 3; Url=/vittaclinic/registro.php");
+            header("Refresh: 3; Url=/vittaclinic/minhapagina.php");
             exit;
         } else {
             $consulta = $conn->prepare("SELECT * FROM medicos WHERE email = :email");
@@ -21,7 +20,7 @@
             $medico = $consulta->fetch();
             if ($medico) {
                     echo 'Esse email já está cadastrado!';
-                    header("Refresh: 3; Url=/vittaclinic/registro.php");
+                    header("Refresh: 3; Url=/vittaclinic/minhapagina.php");
                     exit;
             } else {
                 $consulta = $conn->prepare("SELECT * FROM pacientes WHERE email = :email");
@@ -31,16 +30,14 @@
 
                 if ($paciente) {
                     echo 'Esse email já está cadastrado!';
-                    header("Refresh: 3; Url=/vittaclinic/registro.php");
+                    header("Refresh: 3; Url=/vittaclinic/minhapagina.php");
                     exit;
                 } else {
-                    $_SESSION['email'] = $email;
-                    $consulta = $conn->prepare("INSERT INTO pacientes (email, senha) VALUES (:email, :senha)");
+                    $consulta = $conn->prepare("INSERT INTO adms (email, senha) VALUES (:email, :senha)");
                     $consulta->bindParam(':email', $email);
                     $consulta->bindParam(':senha', $senha_hash);
                     $consulta->execute();
-                    echo 'Cadastro realizado com sucesso';
-                    header('location: /vittaclinic/minhapagina.php');
+                    header("Location: /vittaclinic/minhapagina.php");
                     exit;
                 } 
             }

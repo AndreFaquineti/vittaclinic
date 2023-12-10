@@ -17,7 +17,7 @@
                 if ($_SESSION['tema'] == 1) {
                     stylesheetd();
                 }
-                }
+            }
         ?>
     </head>
     <body>

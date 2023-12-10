@@ -27,9 +27,6 @@
                             <input type="submit" name="trocarTema" value="Trocar Tema">
                         </form>
                         <?php
-                            if (!isset($_SESSION['tema'])) {
-                                $_SESSION['tema'] = 0;
-                            }
                             function trocarTema() {
                                 if ($_SESSION['tema'] == 0) {
                                     $_SESSION['tema'] = 1;

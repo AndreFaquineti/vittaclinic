@@ -12,12 +12,12 @@
                 $_SESSION['tema'] = 0;
             }
             if ($_SESSION['tema'] == 0) {
-                    stylesheetl();
+                stylesheetl();
             } else {
                 if ($_SESSION['tema'] == 1) {
                     stylesheetd();
                 }
-                }
+            }
         ?>
     </head>
     <body>
@@ -37,13 +37,27 @@
                             exit;
                         } else {
                             echo 'Minha Pagina <br>';
-                            echo 'Usuario: ' . $_SESSION['usuario'];
+                            echo 'Usuario: ' . $_SESSION['usuario']; echo '<br>';
                         }
+
                     ?>
                 </div>
                 <div class="col-4" style="text-align: center;">
 
                 </div>
+            </div>
+            <div class="row">
+                <?php
+                    if ($_SESSION['usuario'] == 'ADMIN') {
+                        include 'conteudo/conteudo_admin1.php';
+                    }
+                    if ($_SESSION['usuario'] == 'MEDICO') {
+                        include 'conteudo/conteudo_medico1.php';
+                    }
+                    if ($_SESSION['usuario'] == 'PACIENTE') {
+                        include 'conteudo/conteudo_paciente1.php';
+                    }
+                ?>
             </div>
         </main>
     </body>
