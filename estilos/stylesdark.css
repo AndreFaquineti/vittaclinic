@@ -1,117 +1,51 @@
 /*CORES DE TEXTO*/
-.texto1rosa {
+.titulo1 {
     color: #ff4f84;
 }
-
-.texto2 {
-    color: #E4E6EB;
+.titulo2 {
+    color: #CCCCCC;
 }
-
-.texto3 {
+.texto1 {
     color: #FFFFFF;
 }
-
-.texto4{
-    color: #3366CC;
-}
-/*FONTES*/
-.fonte-arial {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.fonte-bold-700 {
-    font-weight: 700;
-}
-
-.fonte-1rem {
-    font-size: 1rem;
-}
-
-.fonte-2rem {
-    font-size: 2rem;
-}
-
-.fonte-3rem {
-    font-size: 3rem;
-}
-
-.fonte-7rem {
-    font-size: 7rem;
-}
-/*LINKS*/
-.linklimpopreto {
-    text-decoration: none;
-    color:black;
-}
-
-.linklimpobranco {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.linklimpoazul {
-    text-decoration: none;
-    color: #0066ff;
-}
-
-.linklimporosa {
-    text-decoration: none;
-    color: #ff4f84;
-}
-
+/*Tipos de Texto*/
+.linklimpo {text-decoration: none;}
+.px20 {font-size: 20px;}
+.px40 {font-size: 40px;}
+.px60 {font-size: 60px;}
+.px80 {font-size: 80px;}
+.px100 {font-size: 100px;}
+.px120 {font-size: 120px;}
+.w700 {font-weight: 700;}
 /*FUNDOS*/
 .bgmain {
     background-color: #18191A;
 }
 
-.bgrosa {
-    background-color: #ff4f84;
-}
-
-.bgazuldestaque {
-    background-color: #3366CC;
-}
-
-.bggradientazul {
-    height: fit-content;
-    background: linear-gradient(45deg, rgb(0, 88, 219), rgb(0, 30, 71));
-}
-/*AQUELAS CLASSES PONTUAIS*/
-.teste {
-    background-color: #FFFFFF;
-}
-
-.retangulobotao {
-    height: fit-content;
-    width: 400px;
-    background-color: black;
-    border-radius: 25px 25px 25px 25px;
-}
-/*FONTES EXTERNAS*/
+/*FONTES*/
 @font-face {
-    font-family: 'Recoletabold';
-    src: local('Recoleta Bold'), local('recoletabold/Recoleta-Bold'),
-        url('recoletabold/Recoleta-Bold.woff2') format('woff2'),
-        url('recoletabold/Recoleta-Bold.woff') format('woff'),
-        url('recoletabold/Recoleta-Bold.ttf') format('truetype');
+    font-family: 'recoleta';
+    src: local('Recoleta Bold'), local('fontes/recoletabold/Recoleta-Bold'),
+        url('fontes/recoletabold/Recoleta-Bold.woff2') format('woff2'),
+        url('fontes/recoletabold/Recoleta-Bold.woff') format('woff'),
+        url('fontes/recoletabold/Recoleta-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
 
-.fonte-recoleta-bold {
-    font-family: 'Recoletabold';
+.recoleta {
+    font-family: 'recoleta';
 }
 
 @font-face {
-    font-family: 'Recoletaboldalt';
-    src: local('Recoleta Alt Bold'), local('Recoleta-Alt-Bold'),
-        url('recoletaboldalt/RecoletaAlt-Bold.woff2') format('woff2'),
-        url('recoletaboldalt/RecoletaAlt-Bold.woff') format('woff'),
-        url('recoletaboldalt/RecoletaAlt-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'recoletaalt';
+    src: local('Recoleta Alt Bold'), local('fontes/Recoleta-Alt-Bold'),
+        url('fontes/recoletaboldalt/RecoletaAlt-Bold.woff2') format('woff2'),
+        url('fontes/recoletaboldalt/RecoletaAlt-Bold.woff') format('woff'),
+        url('fontes/recoletaboldalt/RecoletaAlt-Bold.ttf') format('truetype');
     font-style: normal;
   }
 
-.fonte-recoleta-bold-alt {
-    font-family: 'Recoletaboldalt';
+.recoletaalt {
+    font-family: 'recoletaalt';
 }

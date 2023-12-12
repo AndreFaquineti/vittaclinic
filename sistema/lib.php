@@ -21,7 +21,7 @@
     }
 
     function hearticon() {
-        echo '<link rel="icon" type="images/x-icon" href="imagens/heart-pulse.svg" />';
+        echo '<link rel="icon" type="images/x-icon" href="conteudo/imagens/heart-pulse.svg" />';
     }
 
     function instagramicon() {

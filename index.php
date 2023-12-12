@@ -24,6 +24,8 @@
         <main class="bgmain" style="height: 100%;">
             <?php
                 include 'conteudo/navbar.php';
+                include 'conteudo/conteudo_main1.php';
+                include 'conteudo/footer.php';
             ?>
         </main>
     </body>

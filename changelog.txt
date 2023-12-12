@@ -9,3 +9,4 @@ YY/MM/DD
 23/12/08 - Correções de navbar e layout; Sistema de registro e session funcionais; Pagina minha pagina criada.
 23/12/09 - Sistema de login funcional; Updates na Navbar e na Minha Pagina.
 23/12/10 - Criação de admins; Admins podem criar contas de médicos e admins.
+23/12/11 - Marcação.php; Novos estilos; index.php estilizado; navbar organizada e estilizada; correção de bugs.
