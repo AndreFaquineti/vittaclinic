@@ -6,11 +6,11 @@
         $senha = $_POST['senha'];
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-        $consulta = $conn->prepare("SELECT * FROM adms WHERE email = :email");
+        $consulta = $conn->prepare("SELECT * FROM administradores WHERE email = :email");
         $consulta->bindParam(':email', $email);
         $consulta->execute();
-        $adms = $consulta->fetch();
-        if ($adms) {
+        $administrador = $consulta->fetch();
+        if ($administrador) {
             echo 'Esse email já está cadastrado!';
             header("Refresh: 3; Url=/vittaclinic/registro.php");
             exit;

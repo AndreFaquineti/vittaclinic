@@ -5,11 +5,11 @@
         $senha = $_POST['senha'];
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-        $consulta = $conn->prepare("SELECT * FROM adms WHERE email = :email");
+        $consulta = $conn->prepare("SELECT * FROM administradores WHERE email = :email");
         $consulta->bindParam(':email', $email);
         $consulta->execute();
-        $adms = $consulta->fetch();
-        if ($adms) {
+        $administrador = $consulta->fetch();
+        if ($administrador) {
             echo 'Esse email já está cadastrado!';
             header("Refresh: 3; Url=/vittaclinic/minhapagina.php");
             exit;
@@ -33,7 +33,7 @@
                     header("Refresh: 3; Url=/vittaclinic/minhapagina.php");
                     exit;
                 } else {
-                    $consulta = $conn->prepare("INSERT INTO adms (email, senha) VALUES (:email, :senha)");
+                    $consulta = $conn->prepare("INSERT INTO administradores (email, senha) VALUES (:email, :senha)");
                     $consulta->bindParam(':email', $email);
                     $consulta->bindParam(':senha', $senha_hash);
                     $consulta->execute();

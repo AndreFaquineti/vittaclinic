@@ -49,7 +49,7 @@
             <div class="row">
                 <?php
                     if ($_SESSION['usuario'] == 'ADMIN') {
-                        include 'conteudo/conteudo_admin1.php';
+                        include 'conteudo/conteudo_admin.php';
                     }
                     if ($_SESSION['usuario'] == 'MEDICO') {
                         include 'conteudo/conteudo_medico1.php';

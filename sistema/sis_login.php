@@ -6,11 +6,11 @@
         $senha = $_POST['senha'];
         $senha_hash = password_hash($senha, PASSWORD_DEFAULT);
 
-        $consulta = $conn->prepare("SELECT * FROM adms WHERE email = :email");
+        $consulta = $conn->prepare("SELECT * FROM administradores WHERE email = :email");
         $consulta->bindParam(':email', $email);
         $consulta->execute();
-        $adms = $consulta->fetch();
-        if ($adms) {
+        $administrador = $consulta->fetch();
+        if ($administrador) {
             if (password_verify($senha, $senha_hash)) {
                 $_SESSION['email'] = $email;
                 $_SESSION['usuario'] = 'ADMIN';

@@ -15,11 +15,15 @@ CREATE TABLE medicos (
     PRIMARY KEY (email)
 );
 
-CREATE TABLE adms (
+CREATE TABLE administradores (
     email varchar (100) NOT NULL,
     senha varchar (100) NOT NULL,
     PRIMARY KEY (email)
 );
+
+INSERT INTO pacientes VALUES("paciente1@teste.com","123");
+INSERT INTO medicos VALUES("medico1@teste.com","123");
+INSERT INTO administradores VALUES("admin1@teste.com","123");
 
 CREATE TABLE IF NOT EXISTS horarios_medicoteste (
     horario DATETIME NOT NULL,
@@ -30,10 +34,6 @@ CREATE TABLE IF NOT EXISTS horarios_medicoteste (
     FOREIGN KEY (email_paciente_fk) REFERENCES paciente(email),
     FOREIGN KEY (email_medico_fk) REFERENCES medico(email)
 );
-
-INSERT INTO pacientes VALUES("paciente@teste.com","123");
-INSERT INTO medicos VALUES("medico@teste.com","123");
-INSERT INTO adms VALUES("admin@1.com","admin");
 
 DELIMITER //
     SET @contador := 0;
@@ -56,5 +56,5 @@ DELIMITER ;
 
 SELECT * FROM medicos;
 SELECT * FROM pacientes;
-SELECT * FROM adms;
+SELECT * FROM administradores;
 SELECT * FROM horario_medicoteste;
