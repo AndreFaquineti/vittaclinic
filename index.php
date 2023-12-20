@@ -22,11 +22,27 @@
     </head>
     <body>
         <main class="bgmain" style="height: 100%;">
-            <?php
-                include 'conteudo/navbar.php';
-                include 'conteudo/conteudo_main1.php';
-                include 'conteudo/footer.php';
-            ?>
+            <div class="row">
+                <div class="col-12">
+                    <?php
+                        include 'conteudo/navbar.php';
+                    ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <?php
+                        include 'conteudo/conteudo_main1.php';
+                    ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <?php
+                        include 'conteudo/footer.php';
+                    ?>
+                </div>
+            </div>
         </main>
     </body>
 </html>

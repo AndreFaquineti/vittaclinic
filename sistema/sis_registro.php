@@ -35,6 +35,7 @@
                     exit;
                 } else {
                     $_SESSION['email'] = $email;
+                    $_SESSION['usuario'] = 'PACIENTE';
                     $consulta = $conn->prepare("INSERT INTO pacientes (email, senha) VALUES (:email, :senha)");
                     $consulta->bindParam(':email', $email);
                     $consulta->bindParam(':senha', $senha_hash);
