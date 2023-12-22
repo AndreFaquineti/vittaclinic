@@ -4,7 +4,7 @@
 
     </head>
     <body>
-        <div class="row">
+        <div class="row" style="display: flex; align-items: center; text-align: center; margin: 0 auto;">
             <div class="col-2" style="text-align: center; margin: 0 auto;">
                 <div>
                     <a href="index.php" class="linklimpo px40 titulo1">VittaClinic</a>
@@ -16,7 +16,17 @@
             <div class="col-2" style="text-align: center; margin: 0 auto;">
                 <div>
                     <form method="post">
-                        <input type="submit" name="trocarTema" value="Trocar Tema">
+                        <button class="botao1 bgmain" style="height: 30px; width: 30px;" type="submit" name="trocarTema">
+                        <?php
+                        if (isset($_SESSION['tema'])) {
+                            if ($_SESSION['tema'] == 0) {
+                                echo '<img src="/vittaclinic/conteudo/imagens/moon-fill.svg" alt="aaaa" style="height: 20px; width: 20px;">';
+                            } else {
+                                echo '<img src="/vittaclinic/conteudo/imagens/sun-fill.svg" alt="aaaa" style="height: 20px; width: 20px;">';
+                            }
+                        }
+                        ?>
+                        </button>
                     </form>
                     <?php
                         function trocarTema() {

@@ -1,13 +1,8 @@
 /*CORES DE TEXTO*/
-.titulo1 {
-    color: #ff4f84;
-}
-.titulo2 {
-    color: #CCCCCC;
-}
-.texto1 {
-    color: #FFFFFF;
-}
+.titulo1 {color: #ff4f84;}
+.titulo2 {color: #CCCCCC;}
+.texto1 {color: #FFFFFF;}
+.textobranco {color: #FFFFFF;}
 /*Tipos de Texto*/
 .linklimpo {text-decoration: none;}
 .px20 {font-size: 20px;}
@@ -18,10 +13,7 @@
 .px120 {font-size: 120px;}
 .w700 {font-weight: 700;}
 /*FUNDOS*/
-.bgmain {
-    background-color: #18191A;
-}
-
+.bgmain {background-color: #18191A;}
 /*FONTES*/
 @font-face {
     font-family: 'recoleta';
@@ -32,11 +24,7 @@
     font-weight: 700;
     font-style: normal;
   }
-
-.recoleta {
-    font-family: 'recoleta';
-}
-
+.recoleta {font-family: 'recoleta';}
 @font-face {
     font-family: 'recoletaalt';
     src: local('Recoleta Alt Bold'), local('fontes/Recoleta-Alt-Bold'),
@@ -45,11 +33,7 @@
         url('fontes/recoletaboldalt/RecoletaAlt-Bold.ttf') format('truetype');
     font-style: normal;
   }
-
-.recoletaalt {
-    font-family: 'recoletaalt';
-}
-/*GERAL*/
+.recoletaalt {font-family: 'recoletaalt';}
 /*GERAL*/
 * {
     box-sizing: border-box;
@@ -71,7 +55,7 @@
 .col-12 {width: 100%;}
 [class*="col-"] {
     float: left;
-    border: 1px solid transparent;
+    border: 0px solid red;
   }
 @media (max-width: 800px) {
     [class*="col-"] {
@@ -92,3 +76,24 @@
     }
 }
 /*ELEMENTOS*/
+.botao1 {
+    transition: 0.8s;
+  }
+  .botao1:hover {
+    background-color: #33363a;
+    border-radius: 15px;
+  }
+.botao2 {
+    background-color: #ff4f84;
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.8s;
+}
+  .botao2:hover {
+    background-color: #d84370;
+  }
+
+#box1 {
+    width: fit-content;
+    height: fit-content;
+}

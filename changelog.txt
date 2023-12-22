@@ -13,3 +13,5 @@ YY/MM/DD
 23/12/13 - Nova estrutura de "minha pagina" a ser implementada; Sistema para conseguir os emails de médicos; Futuras atualizações de bd.
 23/12/16 - Pequenas correções de layout e sistema.
 23/12/19 - Main refeita praticamente; Novo sistema flex implementado; Novo sistema para implementar imagens.
+23/12/20 - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
+23/12/22 - Dois estilos de botões aplicaveis; Correções na main e navbar.
