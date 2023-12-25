@@ -11,6 +11,16 @@
 .px80 {font-size: 80px;}
 .px100 {font-size: 100px;}
 .px120 {font-size: 120px;}
+.vw1 {font-size: 1vw;}
+.vw2 {font-size: 2vw;}
+.vw3 {font-size: 3vw;}
+.vw4 {font-size: 4vw;}
+.vw5 {font-size: 5vw;}
+.vw6 {font-size: 6vw;}
+.vw7 {font-size: 7vw;}
+.vw8 {font-size: 8vw;}
+.vw9 {font-size: 9vw;}
+.vw10 {font-size: 10vw;}
 .w700 {font-weight: 700;}
 /*FUNDOS*/
 .bgmain {background-color: #FFFFFF;}
@@ -99,7 +109,12 @@
   .botao2:hover {
     background-color: #d84370;
   }
-
+.link1 {
+  text-decoration: none;
+}
+ .link1:hover {
+  text-decoration: underline;
+ }
 #box1 {
     width: fit-content;
     height: fit-content;

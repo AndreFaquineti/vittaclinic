@@ -4,28 +4,28 @@
 
     </head>
     <body>
-        <div class="row" style="display: flex; align-items: center; text-align: center; margin: 0 auto;">
-            <div class="col-2" style="text-align: center; margin: 0 auto;">
+        <div class="row" style="height: 10%;">
+            <div class="col-2" style="display: flex; justify-content: center; align-items: center; margin: 0 auto; height: 100%;">
                 <div>
-                    <a href="index.php" class="linklimpo px40 titulo1">VittaClinic</a>
+                    <a href="index.php" class="linklimpo vw3 titulo1">VittaClinic</a>
                 </div>
             </div>
-            <div class="col-2" style="text-align: center; margin: 0 auto;">
+            <div class="col-2" style="display: flex; justify-content: center; align-items: center; margin: 0 auto; height: 100%;">
 
             </div>
-            <div class="col-2" style="text-align: center; margin: 0 auto;">
+            <div class="col-2" style="display: flex; justify-content: center; align-items: center; margin: 0 auto; height: 100%;">
                 <div>
                     <form method="post">
-                        <button class="botao1 bgmain" style="height: 30px; width: 30px;" type="submit" name="trocarTema">
-                        <?php
-                        if (isset($_SESSION['tema'])) {
-                            if ($_SESSION['tema'] == 0) {
-                                echo '<img src="/vittaclinic/conteudo/imagens/moon-fill.svg" alt="aaaa" style="height: 20px; width: 20px;">';
-                            } else {
-                                echo '<img src="/vittaclinic/conteudo/imagens/sun-fill.svg" alt="aaaa" style="height: 20px; width: 20px;">';
-                            }
-                        }
-                        ?>
+                        <button class="botao1 bgmain" style="height: 80%;" type="submit" name="trocarTema">
+                            <?php
+                                if (isset($_SESSION['tema'])) {
+                                    if ($_SESSION['tema'] == 0) {
+                                        echo '<img src="/vittaclinic/conteudo/imagens/moon-fill.svg" alt="aaaa" style="padding:12%; height: 60%;">';
+                                    } else {
+                                        echo '<img src="/vittaclinic/conteudo/imagens/sun-fill.svg" alt="aaaa" style="padding:12%; height: 60%;">';
+                                    }
+                                }
+                            ?>
                         </button>
                     </form>
                     <?php
@@ -43,20 +43,26 @@
                     ?>
                 </div>
             </div>
-            <div class="col-4" style="text-align: center; margin: 0 auto;">
+            <div class="col-6" style="display: flex; justify-content: center; align-items: center; margin: 0 auto; height: 100%;">
                 <?php
                     if (isset($_SESSION['email'])) {
                         echo 'Usuario: ' . $_SESSION['email']; echo '<br>';
-                        echo '<a href="/vittaclinic/minhapagina.php" class="linklimpo">Minha página</a>';
+                        echo '<a href="/vittaclinic/minhapagina.php" class="link1 texto1">Minha página</a>';
                     } else {
-                        echo '<a href="/vittaclinic/login.php" class="linklimpo">Entre/Faça Seu Cadastro</a>';
+                        echo '<a href="/vittaclinic/login.php" class="link1 texto1 vw2">Entre/Faça Seu Cadastro</a>';
                     }
-                ?>
-            </div>
-            <div class="col-2" style="text-align: center; margin: 0 auto;">
-                <div>
-                <a href="sistema/sair.php" class="linklimpo">Sair</a>
-                </div>
+                ?> &nbsp &nbsp &nbsp &nbsp
+                <a href="sistema/sair.php" class="botao1" style="">
+                    <?php
+                        if (isset($_SESSION['tema'])) {
+                            if ($_SESSION['tema'] == 0) {
+                                echo '<img src="/vittaclinic/conteudo/imagens/exit-black.svg" alt="aaaa" style="padding:12%; height: 60%;">';
+                            } else {
+                                echo '<img src="/vittaclinic/conteudo/imagens/exit-white.svg" alt="aaaa" style="padding:12%; height: 60%;">';
+                            }
+                        }
+                    ?>
+                </a>
             </div>
         </div>
     </body>

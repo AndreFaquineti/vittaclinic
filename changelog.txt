@@ -15,3 +15,4 @@ YY/MM/DD
 23/12/19 - Main refeita praticamente; Novo sistema flex implementado; Novo sistema para implementar imagens.
 23/12/20 - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.
 23/12/22 - Dois estilos de botões aplicaveis; Correções na main e navbar.
+23/12/24 - Stylesheets; Sair.php; Navbar atualizada com novos botões e fontes responsivas.
