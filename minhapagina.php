@@ -49,13 +49,13 @@
             <div class="row">
                 <?php
                     if ($_SESSION['usuario'] == 'ADMIN') {
-                        include 'conteudo/conteudo_admin.php';
+                        include 'conteudo/conteudo_mp_admin.php';
                     }
                     if ($_SESSION['usuario'] == 'MEDICO') {
-                        include 'conteudo/conteudo_medico1.php';
+                        include 'conteudo/conteudo_mp_medico1.php';
                     }
                     if ($_SESSION['usuario'] == 'PACIENTE') {
-                        include 'conteudo/conteudo_paciente1.php';
+                        include 'conteudo/conteudo_mp_paciente1.php';
                     }
                 ?>
             </div>

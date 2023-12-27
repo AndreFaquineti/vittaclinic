@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="col-12">
                     <?php
-                        include 'conteudo/conteudo_main1.php';
+                        include 'conteudo/conteudo_index1.php';
                     ?>
                 </div>
             </div>
